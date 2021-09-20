@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashViewComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }

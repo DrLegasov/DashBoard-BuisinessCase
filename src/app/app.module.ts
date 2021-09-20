@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ErrorsViewComponent } from './views/errors-view/errors-view.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DatepickerRangePopupComponent } from './components/datepicker-range-popup/datepicker-range-popup.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DatepickerRangePopupComponent } from './components/datepicker-range-pop
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    NgChartsModule
   ],
   providers: [
     AuthService,
