@@ -11,9 +11,12 @@ import { AuthService } from './services/auth/auth.service';
 import { AuthGuard } from './guards/auth/auth.guard';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ErrorsViewComponent } from './views/errors-view/errors-view.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DatepickerRangePopupComponent } from './components/datepicker-range-popup/datepicker-range-popup.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgChartsModule } from 'ng2-charts';
+import { GraphiqueComponent } from './components/graphique/graphique.component';
+import { LineChartComponent } from './charts/line-chart/line-chart.component';
+import { NewCustomersComponent } from './charts/new-customers/new-customers.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { NgChartsModule } from 'ng2-charts';
     AuthViewComponent,
     DashViewComponent,
     ErrorsViewComponent,
-    DatepickerRangePopupComponent
+    DatepickerRangePopupComponent,
+    GraphiqueComponent,
+    LineChartComponent,
+    NewCustomersComponent,
   ],
   imports: [
     BrowserModule,

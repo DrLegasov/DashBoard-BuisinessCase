@@ -16,6 +16,12 @@ export class GraphiqueComponent implements OnInit {
 
   @Input() nbBleu: number;
   @Input() nbBlanc: number;
+  @Input() nbRouge: number;
+  @Input() nbJaune: number;
+  @Input() nbVert: number;
+  @Input() nbAzure: number;
+  @Input() nbCyan: number;
+
 
 
   constructor() {
@@ -28,8 +34,8 @@ export class GraphiqueComponent implements OnInit {
     this.datasets = [
       {
         label: 'Dataset 1',
-        data: [this.nbBleu, this.nbBlanc],
-        backgroundColor: ['#01937C', '#FDE2C2'],
+        data: [this.nbBleu, this.nbBlanc, this.nbRouge, this.nbJaune, this.nbAzure, this.nbCyan, this.nbVert],
+        backgroundColor: ['#01937C', '#FDE2C2', '#ffdddd', '#feffdd','#03b3f5', '#0334f5', '#04d004'],
       }
     ];
 

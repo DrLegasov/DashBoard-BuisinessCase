@@ -1,0 +1,9 @@
+body{
+  background-color: rgb(235, 15, 15);
+}
+#cardcol{
+  border-radius: 50px;
+  border-style: double;
+}
+
+
