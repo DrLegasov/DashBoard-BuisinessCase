@@ -17,6 +17,8 @@ import { NgChartsModule } from 'ng2-charts';
 import { GraphiqueComponent } from './components/graphique/graphique.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { NewCustomersComponent } from './charts/new-customers/new-customers.component';
+import { CartsComponent } from './charts/carts/carts.component';
+import { VisitsComponent } from './charts/visits/visits.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { NewCustomersComponent } from './charts/new-customers/new-customers.comp
     GraphiqueComponent,
     LineChartComponent,
     NewCustomersComponent,
+    CartsComponent,
+    VisitsComponent,
   ],
   imports: [
     BrowserModule,

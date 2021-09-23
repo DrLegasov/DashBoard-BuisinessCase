@@ -2,23 +2,18 @@ import { Component, } from '@angular/core';
 import { ChartDataset, ChartType } from 'chart.js';
 
 @Component({
-  selector: 'app-new-customers',
-  templateUrl: './new-customers.component.html',
-  styleUrls: ['./new-customers.component.css']
+  selector: 'app-carts',
+  templateUrl: './carts.component.html',
+  styleUrls: ['./carts.component.css']
 })
 
-export class NewCustomersComponent {
+export class CartsComponent {
 
   lineChartData: ChartDataset[] = [
     {
-      data: [62, 84, 59, 134, 164, 131, 266, 307, 323],
-      label: 'Nombre de Commandes',
-      borderColor: 'chartreuse',
-      backgroundColor: 'rgba(235,255,113,1)',
-    },{
-      data: [40, 72, 40, 32, 148, 131, 227, 275, 302],
-      label: 'Nombre de Paniers',
-      borderColor: 'black',
+      data: [25, 31, 38, 58, 46, 29, 28, 49, 57],
+      label: 'Valeur du panier moyen',
+      borderColor: 'yellow',
       backgroundColor: 'rgba(235,255,113,1)',
     }
   ];

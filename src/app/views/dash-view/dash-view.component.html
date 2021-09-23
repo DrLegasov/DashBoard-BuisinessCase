@@ -1,96 +1,80 @@
 <div class="container-fluid">
-<div class="row d-flex text-center">
-  <app-datepicker-range-popup class="calendar3 my-1" id="datepick">
-  </app-datepicker-range-popup>
-  <div class="row d-flex text-center">
+  <div id="calendari" class="row d-flex text-center my-4">
+    <app-datepicker-range-popup class=" my-5" id="datepick">
+    </app-datepicker-range-popup>
+    <div class="row d-flex text-center">
 
-    <div id="sideboo" class="sidebar-container col-2 me-4">
-      <div class="w3-sidebar w3-grey w3-bar-block justify-content" style="width:95%">
-        <h3 class="w3-bar-item">Menu</h3>
-        <button class="btn btn-outline-secondary"><i class="bi bi-bag-fill"></i> Site Marchand</button><br>
-        <hr>
-        <button class="btn btn-outline-secondary"><i class="bi bi-calculator-fill"></i> Page Gestion</button><br>
-        <hr>
-        <button class="btn btn-outline-secondary"><i class="bi bi-info-circle"></i> Aide</button><br>
-      </div>
-    </div>
-    <div class="col-10 row">
-      <div class="container mb-1">
-        <div class="row d-flex text-center justify-content">
-          <div id="ventes" class="col-6">
-            <app-line-chart class="mx-auto my-2"></app-line-chart>
-            <app-new-customers class="mx-auto my-2"></app-new-customers>
-          </div>
-
-
-
-
-          <div class="card d-flex align-item-center mx-2 my-2" style="width: 16rem;">
-            <app-graphique class=" poopop my-5 align" [nbBleu]="30" [nbBlanc]="70"></app-graphique>
-            <div class="card-body">
-              <h5 class="card-title">Nombre de Paniers</h5>
-            </div>
-          </div>
-
-          <div class="card d-flex align-item-center mx-2 my-2" style="width: 16rem;">
-            <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbBlanc]="70"></app-graphique>
-            <div class="card-body">
-              <h5 class="card-title">Valeur du Panier Moyen</h5>
-            </div>
-          </div>
-
-          <div class="card d-flex align-item-center mx-2 my-2" style="width: 16rem;">
-            <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbBlanc]="70"></app-graphique>
-            <div class="card-body">
-              <h5 class="card-title">Nombre de nouveaux Clients</h5>
-            </div>
-          </div>
-
-          <div class="card d-flex align-item-center mx-2 my-2" style="width: 16rem;">
-            <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbBlanc]="70"></app-graphique>
-            <div class="card-body">
-              <h5 class="card-title">% de récurrence de commandes clients</h5>
-            </div>
-          </div>
-
-          <div class="card d-flex align-item-center mx-2 my-2" style="width: 16rem;">
-            <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbBlanc]="70"></app-graphique>
-            <div class="card-body">
-              <h5 class="card-title">% de paniers abandonnées</h5>
-            </div>
-          </div>
-
-          <div class="card d-flex align-item-center mx-2 my-2" style="width: 16rem;">
-            <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbBlanc]="70"></app-graphique>
-            <div class="card-body">
-              <h5 class="card-title">Nombre de Visites</h5>
-            </div>
-          </div>
-
-          <div class="card d-flex align-item-center mx-2 my-2" style="width: 16rem;">
-            <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbBlanc]="70"></app-graphique>
-            <div class="card-body">
-              <h5 class="card-title">% de conversion paniers</h5>
-            </div>
-          </div>
-
-          <div class="card d-flex align-item-center mx-2 my-2" style="width: 16rem;">
-            <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbBlanc]="70"></app-graphique>
-            <div class="card-body">
-              <h5 class="card-title">% de conversion commandes</h5>
-            </div>
-          </div>
-
-          <div class="card d-flex align-item-center mx-2 my-2" style="width: 16rem;">
-            <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbBlanc]="70"></app-graphique>
-            <div class="card-body">
-              <h5 class="card-title">Produits Vendus</h5>
-            </div>
-          </div>
-
+      <div id="sideboo" class="sidebar-container col-2 me-4">
+        <div class="w3-sidebar w3-grey w3-bar-block justify-content">
+          <img class="my-2" id="logo" src="/assets/logotest.png" alt="">
+          <h3 class="w3-bar-item">Menu</h3>
+          <button class="btn btn-outline-secondary"><i class="bi bi-bag-fill"></i> Site Marchand</button><br>
+          <hr>
+          <button class="btn btn-outline-secondary"><i class="bi bi-calculator-fill"></i> Page Gestion</button><br>
+          <hr>
+          <button class="btn btn-outline-secondary"><i class="bi bi-info-circle"></i> Aide</button><br>
         </div>
       </div>
-    </div>
+      <div class="col-10 row">
+        <div class="container mb-1">
+          <div class="row d-flex text-center justify-content">
 
+            <div class="row justify-content-center">
+              <div id="ventes" class="col-5 mx-auto">
+                <app-line-chart class="mx-5 my-2"></app-line-chart><hr>
+                <app-new-customers class="mx-5 my-2"></app-new-customers>
+              </div>
+              <div id="ventes" class="col-5 mx-auto">
+                <app-carts class="mx-5 my-2"></app-carts><hr>
+                <app-visits class="mx-5 my-2"></app-visits>
+              </div>
+            </div>
+
+            <div class="card d-flex align-item-center mx-2 my-2" style="width: 15rem;">
+              <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbJaune]="70"></app-graphique>
+              <div class="card-body">
+                <h5 class="card-title">Nombre de nouveaux Clients</h5>
+              </div>
+            </div>
+
+            <div class="card d-flex align-item-center mx-2 my-2" style="width: 15rem;">
+              <app-graphique class="poopop my-5 align" [nbJaune]="30" [nbBlanc]="70"></app-graphique>
+              <div class="card-body">
+                <h5 class="card-title">% de récurrence de commandes clients</h5>
+              </div>
+            </div>
+
+            <div class="card d-flex align-item-center mx-2 my-2" style="width: 15rem;">
+              <app-graphique class="poopop my-5 align" [nbCyan]="30" [nbVert]="70"></app-graphique>
+              <div class="card-body">
+                <h5 class="card-title">% de paniers abandonnées</h5>
+              </div>
+            </div>
+
+            <div class="card d-flex align-item-center mx-2 my-2" style="width: 15rem;">
+              <app-graphique class="poopop my-5 align" [nbRouge]="30" [nbBlanc]="70"></app-graphique>
+              <div class="card-body">
+                <h5 class="card-title">% de conversion paniers</h5>
+              </div>
+            </div>
+
+            <div class="card d-flex align-item-center mx-2 my-2" style="width: 15rem;">
+              <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbBlanc]="70"></app-graphique>
+              <div class="card-body">
+                <h5 class="card-title">% de conversion commandes</h5>
+              </div>
+            </div>
+
+            <div class="card d-flex align-item-center mx-2 my-2" style="width: 15rem;">
+              <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbAzure]="70"></app-graphique>
+              <div class="card-body">
+                <h5 class="card-title">Produits Vendus</h5>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
-</div>
