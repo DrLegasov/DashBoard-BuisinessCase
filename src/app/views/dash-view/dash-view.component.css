@@ -1,25 +1,17 @@
 #sideboo{
-  background-color: rgba(240, 255, 255, 0.527);
-  border-color: black 1pc solid;
-  border-radius: 8px;
-}
-.colo{
-  color: rgb(0, 0, 0);
-  background-color: rgb(240, 255, 255);
-  border: solid 1px black;
+  height: 400px;
+  background-image: radial-gradient(circle at center center, transparent,rgb(255,255,255)),repeating-linear-gradient(135deg, rgb(255,255,255) 0px, rgb(255,255,255) 12px,transparent 12px, transparent 19px,rgb(255,255,255) 19px, rgb(255,255,255) 24px,transparent 24px, transparent 28px),repeating-linear-gradient(45deg, rgb(245,245,245) 0px, rgb(245,245,245) 7px,transparent 7px, transparent 14px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
   border-style: double;
-  border-radius: 20px;
+  box-shadow: 5px;
+  border-radius: 15px;
+
 }
 #ventes{
-  border: solid 1px black;
-  border-radius: 20px;
+  border: solid 3px black;
+  border-radius: 15px;
+  box-shadow: 5px;
   border-style: dotted;
-    background: linear-gradient(270deg, #e5fff8, #e6e9ff);
-    background-size: 400% 400%;
-
-    -webkit-animation: AnimationName 0s ease infinite;
-    -moz-animation: AnimationName 0s ease infinite;
-    animation: AnimationName 0s ease infinite;
+  background-image: repeating-linear-gradient(284deg, transparent 0px, transparent 1px,rgb(251,251,251) 1px, rgb(251,251,251) 3px),repeating-linear-gradient(14deg, transparent 0px, transparent 1px,rgb(251,251,251) 1px, rgb(251,251,251) 3px),linear-gradient(90deg, rgb(222,222,222),rgb(222,222,222));
 }
 
 @-webkit-keyframes AnimationName {
@@ -38,6 +30,9 @@
     100%{background-position:0% 50%}
 
 }
+.poopop{
+  box-shadow: 3px;
+}
 
 .poopop:hover {
   -webkit-transform: scale(1.1);
@@ -46,3 +41,11 @@
 #logo{
   width: 180px;
 }
+
+.card{
+  border-radius: 20px;
+  box-shadow: 2px;
+
+
+}
+
