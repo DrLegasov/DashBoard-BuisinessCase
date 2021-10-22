@@ -1,6 +1,6 @@
 <div class="container-fluid">
-  <div id="calendari" class="row d-flex text-center my-4">
-    <app-datepicker-range-popup class=" my-5" id="datepick">
+  <div id="calendari" class="row d-flex my-5">
+    <app-datepicker-range-popup class="mt-1 my-5 mx-auto" id="datepick">
     </app-datepicker-range-popup>
     <div class="row d-flex text-center">
 
@@ -13,6 +13,98 @@
           <button class="btn btn-outline-secondary"><i class="bi bi-calculator-fill"></i> Page Gestion</button><br>
           <hr>
           <button class="btn btn-outline-secondary"><i class="bi bi-info-circle"></i> Aide</button><br>
+          <hr>
+          <h3>Nombres Clés</h3>
+          <div class="row my-4">
+            <div class="card l-bg-cherry">
+              <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large"><i class="fas fa-shopping-cart"></i></div>
+                <div class="mb-4">
+                  <h5 class="card-title mb-0">Commandes</h5>
+                </div>
+                <div class=" align-items-center mb-2 d-flex">
+                  <div class="col-8">
+                    <h2 class="d-flex align-items-center mb-0">
+                      3,243
+                    </h2>
+                  </div>
+                  <div class="col-4 text-right">
+                    <span>12.5% <i class="fa fa-arrow-up"></i></span>
+                  </div>
+                </div>
+                <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                  <div class="progress-bar l-bg-cyan" role="progressbar" data-width="25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card l-bg-blue-dark">
+              <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large"><i class="fas fa-users"></i></div>
+                <div class="mb-4">
+                  <h5 class="card-title mb-0">Clients</h5>
+                </div>
+                <div class=" align-items-center mb-2 d-flex">
+                  <div class="col-8">
+                    <h2 class="d-flex align-items-center mb-0">
+                      15.7k
+                    </h2>
+                  </div>
+                  <div class="col-4 text-right">
+                    <span>9.23% <i class="fa fa-arrow-up"></i></span>
+                  </div>
+                </div>
+                <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                  <div class="progress-bar l-bg-green" role="progressbar" data-width="25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card l-bg-green-dark">
+              <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large"><i class="fas fa-ticket-alt"></i></div>
+                <div class="mb-4">
+                  <h5 class="card-title mb-0">Paniers du jour</h5>
+                </div>
+                <div class="align-items-center mb-2 d-flex">
+                  <div class="col-8">
+                    <h2 class="d-flex align-items-center mb-0">
+                      578
+                    </h2>
+                  </div>
+                  <div class="col-4 text-right">
+                    <span>+10% <i class="fa fa-arrow-up"></i></span>
+                  </div>
+                </div>
+                <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                  <div class="progress-bar l-bg-orange" role="progressbar" data-width="25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card l-bg-orange-dark">
+              <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large"><i class="fas fa-dollar-sign"></i></div>
+                <div class="mb-4">
+                  <h5 class="card-title mb-0">Revenus Quotidiens</h5>
+                </div>
+                <div class="align-items-center mb-2 d-flex">
+                  <div class="col-8">
+                    <h2 class="d-flex align-items-center mb-0">
+                      €11.6k
+                    </h2>
+                  </div>
+                  <div class="col-4 text-right">
+                    <span>2.5% <i class="fa fa-arrow-up"></i></span>
+                  </div>
+                </div>
+                <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                  <div class="progress-bar l-bg-cyan" role="progressbar" data-width="25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-10 row">
@@ -20,53 +112,55 @@
           <div class="row d-flex text-center justify-content">
 
             <div class="row justify-content-center">
-              <div id="ventes" class="col-5 mx-auto">
-                <app-line-chart class="mx-5 my-2"></app-line-chart><hr>
+              <div id="ventes" class="ligneg col-5 mx-auto">
+                <app-line-chart class="ligneg mx-5 my-2"></app-line-chart>
+                <hr>
                 <app-new-customers class="mx-5 my-2"></app-new-customers>
               </div>
               <div id="ventes" class="col-5 mx-auto">
-                <app-carts class="mx-5 my-2"></app-carts><hr>
-                <app-visits class="mx-5 my-2"></app-visits>
+                <app-carts class="ligneg mx-5 my-2"></app-carts>
+                <hr>
+                <app-visits class="ligneg mx-5 my-2"></app-visits>
               </div>
             </div>
 
-            <div class="card d-flex align-item-center mx-2 my-2" style="width: 15rem;">
-              <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbJaune]="70"></app-graphique>
+            <div class="card d-flex align-item-center mx-5 my-5" style="width: 15rem;">
+              <app-graphique class="poopop my-5 p-2 align" [nbBleu]="30" [nbJaune]="70"></app-graphique>
               <div class="card-body">
                 <h5 class="card-title">Nombre de nouveaux Clients</h5>
               </div>
             </div>
 
-            <div class="card d-flex align-item-center mx-2 my-2" style="width: 15rem;">
-              <app-graphique class="poopop my-5 align" [nbJaune]="30" [nbBlanc]="70"></app-graphique>
+            <div class="card d-flex align-item-center mx-5 my-5" style="width: 15rem;">
+              <app-graphique class="poopop my-5 p-2 align" [nbJaune]="30" [nbBlanc]="70"></app-graphique>
               <div class="card-body">
                 <h5 class="card-title">% de récurrence de commandes clients</h5>
               </div>
             </div>
 
-            <div class="card d-flex align-item-center mx-2 my-2" style="width: 15rem;">
-              <app-graphique class="poopop my-5 align" [nbCyan]="30" [nbVert]="70"></app-graphique>
+            <div class="card d-flex align-item-center mx-5 my-5" style="width: 15rem;">
+              <app-graphique class="poopop my-5 p-2 align" [nbCyan]="30" [nbVert]="70"></app-graphique>
               <div class="card-body">
                 <h5 class="card-title">% de paniers abandonnées</h5>
               </div>
             </div>
 
-            <div class="card d-flex align-item-center mx-2 my-2" style="width: 15rem;">
-              <app-graphique class="poopop my-5 align" [nbRouge]="30" [nbBlanc]="70"></app-graphique>
+            <div class="card d-flex align-item-center mx-5 my-5" style="width: 15rem;">
+              <app-graphique class="poopop my-5 p-2 align" [nbRouge]="30" [nbBlanc]="70"></app-graphique>
               <div class="card-body">
                 <h5 class="card-title">% de conversion paniers</h5>
               </div>
             </div>
 
-            <div class="card d-flex align-item-center mx-2 my-2" style="width: 15rem;">
-              <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbBlanc]="70"></app-graphique>
+            <div class="card d-flex align-item-center mx-5 my-5" style="width: 15rem;">
+              <app-graphique class="poopop my-5 p-2 align" [nbBleu]="30" [nbBlanc]="70"></app-graphique>
               <div class="card-body">
                 <h5 class="card-title">% de conversion commandes</h5>
               </div>
             </div>
 
-            <div class="card d-flex align-item-center mx-2 my-2" style="width: 15rem;">
-              <app-graphique class="poopop my-5 align" [nbBleu]="30" [nbAzure]="70"></app-graphique>
+            <div class="card d-flex align-item-center mx-5 my-5" style="width: 15rem;">
+              <app-graphique class="poopop my-5 p-2 align" [nbBleu]="30" [nbAzure]="70"></app-graphique>
               <div class="card-body">
                 <h5 class="card-title">Produits Vendus</h5>
               </div>

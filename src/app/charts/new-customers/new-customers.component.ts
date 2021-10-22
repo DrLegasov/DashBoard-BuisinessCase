@@ -12,14 +12,16 @@ export class NewCustomersComponent {
   lineChartData: ChartDataset[] = [
     {
       data: [62, 84, 59, 134, 164, 131, 266, 307, 323],
+      fill: 'origin',
       label: 'Nombre de Commandes',
       borderColor: 'chartreuse',
-      backgroundColor: 'rgba(235,255,113,1)',
+      backgroundColor: 'rgba(176,176,176,0.18)',
     },{
       data: [40, 72, 40, 32, 148, 131, 227, 275, 302],
+      fill: 'origin',
       label: 'Nombre de Paniers',
       borderColor: 'black',
-      backgroundColor: 'rgba(235,255,113,1)',
+      backgroundColor: 'rgba(235,255,113,0.2)',
     }
   ];
 
